@@ -115,11 +115,11 @@ public class BasePage {
         click(by);
     }
     /**
-     * @comment Seçilen ürünün sayısı 2 yapıldı.
+     * @comment Seçilen ürünün sayısını değiştiren method.
      */
-    public void countProducts(By by) {
+    public void countProducts(By by, int x) {
         Select two = new Select(findElement(by));
-        two.selectByIndex(1);
+        two.selectByIndex(x-1);
         click(by);
     }
 

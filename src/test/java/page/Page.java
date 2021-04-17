@@ -14,7 +14,7 @@ public class Page extends BasePage {
         super(driver);
 
     }
-    private static Logger logger = LogManager.getLogger(BasePage.class);
+    private static Logger logger = LogManager.getLogger(Page.class);
     /**
      * @comment Giriş yap butonuna hover olma methodu.
      */
@@ -88,7 +88,7 @@ public class Page extends BasePage {
     public Page productCount(){
         logger.info("Ürün sayısı arttırılma işlemi başlıyor.");
         click(SELECT_COUNT);
-        countProducts(PRODUCT_COUNT);
+        countProducts(PRODUCT_COUNT,2);
         logger.info("Ürün sayısı başarıyla arttırıldı.");
         return this;
     }
